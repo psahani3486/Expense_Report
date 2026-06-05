@@ -1,0 +1,19 @@
+{
+  "name": "expense-report-editor",
+  "version": "1.0.0",
+  "description": "Excel spreadsheet editor with auto-save",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node server.js",
+    "client": "cd client && npm run dev"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
