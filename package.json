@@ -4,6 +4,7 @@
   "description": "Excel spreadsheet editor with auto-save",
   "private": true,
   "scripts": {
+    "start": "node server.js",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "server": "node server.js",
     "client": "cd client && npm run dev"

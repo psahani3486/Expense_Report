@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: expense-report-backend
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: CORS_ORIGIN
+        value: "*"
+      - key: NODE_ENV
+        value: production

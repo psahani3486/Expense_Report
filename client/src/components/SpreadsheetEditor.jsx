@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 
-const API_URL = '/api/expense-report';
+const API_URL = import.meta.env.VITE_API_URL || '/api/expense-report';
 
 // Helper to convert column index to letter (0=A, 1=B, etc.)
 function colIndexToLetter(index) {
